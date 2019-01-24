@@ -4,11 +4,14 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>HelloCordova</name>
+    <feature name="Brightness">
+        <param name="android-package" value="org.apache.cordova.plugin.Brightness.BrightnessPlugin" />
+    </feature>
+    <name>templateAbba</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Cara malas untuk menyelesaikan banyak project
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="abbasiagian@gmail.com" href="http://abbayosua.design">
         Apache Cordova Team
     </author>
     <content src="index.html" />
