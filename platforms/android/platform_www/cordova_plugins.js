@@ -7,6 +7,14 @@ module.exports = [
     "clobbers": [
       "cordova.plugins.brightness"
     ]
+  },
+  {
+    "id": "cordova-plugin-battery-status.battery",
+    "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+    "pluginId": "cordova-plugin-battery-status",
+    "clobbers": [
+      "navigator.battery"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -14,7 +22,8 @@ module.exports.metadata =
 {
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-brightness": "0.1.5",
-  "cordova-plugin-vibration": "3.1.0"
+  "cordova-plugin-vibration": "3.1.0",
+  "cordova-plugin-battery-status": "2.0.2"
 };
 // BOTTOM OF METADATA
 });

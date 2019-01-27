@@ -7,6 +7,9 @@
     <feature name="Brightness">
         <param name="android-package" value="org.apache.cordova.plugin.Brightness.BrightnessPlugin" />
     </feature>
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
     <name>templateAbba</name>
     <description>
         Cara malas untuk menyelesaikan banyak project
