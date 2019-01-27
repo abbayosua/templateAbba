@@ -212,6 +212,30 @@
             </svg> -->
           </div>
           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
+              <button id = "cameraTakePicture">TAKE PICTURE</button>
+              <img id = "myImage"></img>
+              <script>
+              document.getElementById("cameraTakePicture").addEventListener 
+                ("click", cameraTakePicture); 
+                function cameraTakePicture() { 
+                  
+                navigator.camera.getPicture(onSuccess, onFail, {  
+                    quality: 50, 
+                    destinationType: Camera.DestinationType.DATA_URL 
+                });  
+                
+                function onSuccess(imageData) { 
+                    var image = document.getElementById('myImage'); 
+                    image.src = "data:image/jpeg;base64," + imageData; 
+                }  
+                
+                function onFail(message) { 
+                    alert('Failed because: ' + message); 
+                } 
+              }
+              </script>
+          </div>
+          <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
               <div class="mapouter"><div class="gmap_canvas"><iframe width="536" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=nongsa%20digital%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:auto;width:auto;}.gmap_canvas {overflow:hidden;background:none!important;height:auto;width:auto;}</style></div>
           </div>
           <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
